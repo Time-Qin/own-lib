@@ -1,5 +1,5 @@
 import chalk from "chalk"
-import { isUnicodeSupported } from "."
+import { isUnicodeSupported } from "./index.js"
 
 const main = {
   info: chalk.blue("ℹ"),

@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./src/index.js",
   "bin": {
-    "own-cli": "./src/index.js"
+    "own-cli": "dist/es/index.js"
   },
   "scripts": {
     "build": "rollup -c rollup.config.js"
@@ -20,11 +20,11 @@
   "dependencies": {
     "chalk": "^5.4.1",
     "ora": "^8.2.0",
-    "inquirer": "^12.4.2",
     "figlet": "^1.8.0",
     "fs-extra": "^11.3.0",
     "shelljs": "^0.8.5",
-    "table": "^6.9.0"
+    "table": "^6.9.0",
+    "inquirer": "^12.4.2"
   },
   "devDependencies": {
     "rollup": "^2.77.0",

@@ -2,7 +2,7 @@ import path from "path"
 import fs from "fs-extra"
 import ora from "ora"
 import chalk from "chalk"
-import logSymbols from "./log-symbols.js"
+import logSymbols from "./logSymbols.js"
 import shell from "shelljs"
 
 const appDirectory = fs.realpathSync(process.cwd())

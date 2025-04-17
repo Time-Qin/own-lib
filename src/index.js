@@ -1,11 +1,12 @@
+// #!/usr/bin/env node
 import chalk from "chalk"
 import { Command } from "commander"
 import figlet from "figlet"
-import { templates } from "./utils/constants"
+import { templates } from "./utils/constants.js"
 import fs from "fs-extra"
-import logSymbols from "./utils/log-symbols"
+import logSymbols from "./utils/logSymbols.js"
 import { table } from "table"
-import initActions from "./utils/init-actions"
+import initActions from "./utils/initActions.js"
 
 const program = new Command("own-cli")
 

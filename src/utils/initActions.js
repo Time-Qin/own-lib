@@ -1,10 +1,10 @@
 import shell from "shelljs"
-import logSymbols from "./log-symbols"
+import logSymbols from "./logSymbols.js"
 import fs from "fs-extra"
-import { changePackageJSON, npmInstall, removeDir } from "."
-import clone from "./git-index"
-import { inquirerChoices, inquirerInputs } from "./interactive"
-import { templates } from "./constants"
+import { changePackageJSON, npmInstall, removeDir } from "./index.js"
+import clone from "./gitIndex.js"
+import { inquirerChoices, inquirerInputs } from "./interactive.js"
+import { templates } from "./constants.js"
 const initActions = async (name, option) => {
   if (!shell.which("git")) {
     console.log(logSymbols.error, "抱歉，运行脚本需要先安装git")
